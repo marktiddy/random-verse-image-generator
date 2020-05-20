@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
+
+$main-color: #2c3e50;
+$light-color: #ecf0f1;
+$secondary-color: #16a085;
+
+$main-font: "Roboto", sans-serif;
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $main-color;
+  color: $light-color;
+  font-family: $main-font;
+  display: flex;
+  min-height: 100vh;
+}
+
+.site-content {
+  background: $main-color;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background: $light-color;
+  color: $main-color;
+  width: 260px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+
+nav h1 {
+  font-weight: 300;
+  font-size: 40px;
+}
+
+nav p {
+  font-weight: 300;
+  color: $secondary-color;
+  font-size: 18px;
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px dashed $secondary-color;
+  text-transform: uppercase;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-topic {
+  flex-grow: 1;
+  margin: 30px 50px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 20px;
+}
+
+.image-box {
+  height: 450px;
+  width: 450px;
+  margin-left: 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://picsum.photos/500");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.6);
+}
+
+#quote-text {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 10px;
+  text-align: center;
+}
+
+#quote-source {
+  font-size: 20px;
+}
+
+.black-quote {
+  color: black;
+  text-shadow: 0 0 10px 2px white;
+}
+
+.white-quote {
+  color: white;
+  text-shadow: 0 0 10px 2px black;
+}
+
+.teal-quote {
+  color: $secondary-color;
+  text-shadow: 0 0 10px 2px white;
+}
+
+.nav-buttons {
+  margin-top: 20px;
+}
+.btn {
+  background: $main-color;
+  color: $light-color;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 2px;
+  transition: all 500ms;
+}
+
+.btn-container {
+  margin-top: 20px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: $secondary-color;
+}
+
+.btn-black {
+  background: black;
+  margin-right: 10px;
+}
+
+.btn-white {
+  border: 1px solid black;
+  background: white;
+  color: black;
+  margin-right: 10px;
+}
+
+.btn-white:hover {
+  color: $light-color;
+}
+
+.subtitle {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.nav-footer {
+  margin-top: 50px;
+  color: $main-color;
+  font-size: 12px;
+}
+
+.nav-footer a {
+  font-size: 12px;
+  color: $main-color;
+  text-decoration: none;
+  transition: all 500ms;
+}
+
+.nav-footer a:hover {
+  color: $secondary-color;
+}
+.share-area {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: $secondary-color;
+  transition: all 500ms;
+}
+
+.fa:hover {
+  cursor: pointer;
+  background: $light-color;
+  color: $secondary-color;
+}

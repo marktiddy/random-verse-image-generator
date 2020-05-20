@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Random Bible Verse with Image Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/styles.8986bff4.css" type="text/css">
+  <script src="/styles.8986bff4.js"></script></head>
+  <body>
+    <nav>
+      <h1>The Bible Verse Image Generator</h1>
+      <p>Share something inspiring</p>
+      <div class="nav-buttons">
+        <div class="btn-container">
+          <a class="btn" id="new-image-btn">Change Background Image</a>
+        </div>
+        <div class="btn-container">
+          <a class="btn" id="new-verse-btn">New Bible Verse</a>
+        </div>
+
+        <p class="subtitle">Quote Colour</p>
+        <a class="btn btn-white" id="black-text-btn">Black</a>
+        <a class="btn btn-black" id="white-text-btn"> White</a>
+      </div>
+      <div class="nav-footer">
+        <p>
+          <a target="_blank" href="http://netbible.com/net-bible-preface">Verses taken from bible.org &copy;NET</a>
+        </p>
+      </div>
+    </nav>
+    <div class="site-content">
+      <section class="content-topic flex-center">
+        <div id="image-area-container">
+          <div class="image-box flex-center" id="image-container">
+            <p id="quote-text" class="white-quote">Bible loading...</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="share-area" id="save-img-btn">
+      <p class="share-btn"><i class="fa fa-save fa-2x"></i></p>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/scripts.b71a6038.js"></script>
+</html>

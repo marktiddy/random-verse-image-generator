@@ -169,7 +169,8 @@ nav p {
   font-size: 12px;
 }
 
-.nav-footer a {
+.nav-footer a,
+.nav-footer p {
   font-size: 12px;
   color: #2c3e50;
   text-decoration: none;
@@ -205,5 +206,37 @@ nav p {
   cursor: pointer;
   background: #ecf0f1;
   color: #16a085;
+}
+
+@media (max-width: 560px) {
+  body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .image-box {
+    max-width: 85vw;
+    max-height: 85vw;
+    margin-left: -40px;
+  }
+  .site-content {
+    justify-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  .content-topic {
+    text-align: center;
+  }
+  #quote-text {
+    font-size: 24px;
+  }
+  #quote-source {
+    font-size: 16px;
+  }
+  nav {
+    width: 100vw;
+  }
+  nav h1 {
+    font-size: 24px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

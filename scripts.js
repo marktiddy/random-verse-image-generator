@@ -1,5 +1,8 @@
 import * as htmlToImage from 'html-to-image';
 import download from 'downloadjs';
+import { backupImage } from './backupImage';
+
+//Main JS
 const getBgImage = () => {
   //The number is number of images
   var randomNum = Math.floor(Math.random() * 46);
@@ -59,7 +62,7 @@ const loadVerse = () => {
 const saveImage = () => {
   const node = document.getElementById('image-area-container');
   htmlToImage
-    .toPng(node)
+    .toPng(node, { imagePlaceholder: backupImage })
     .then(function (dataUrl) {
       download(dataUrl, 'my-bible-verse.png');
     })

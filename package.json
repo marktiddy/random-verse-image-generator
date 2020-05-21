@@ -5,7 +5,8 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6"
+    "@babel/preset-env": "^7.9.6",
+    "cssnano": "^4.1.10"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",

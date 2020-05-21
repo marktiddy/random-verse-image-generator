@@ -123,18 +123,25 @@ nav p {
   margin-top: 20px;
 }
 
+.btn-container {
+  margin-top: 20px;
+}
+
+.btn-divider {
+  height: 20px;
+}
+
 .btn {
   background: #2c3e50;
   color: #ecf0f1;
   margin: 5px 0;
   padding: 5px;
+  font-size: 1rem;
+  line-height: 1.8;
   border-radius: 2px;
+  white-space: nowrap;
   -webkit-transition: all 500ms;
   transition: all 500ms;
-}
-
-.btn-container {
-  margin-top: 20px;
 }
 
 .btn:hover {
@@ -209,17 +216,26 @@ nav p {
 }
 
 @media (max-width: 560px) {
+  * {
+    width: 100vw;
+  }
   body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .btn-divider {
+    display: none;
+  }
+  .subtitle {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
   .image-box {
     max-width: 85vw;
     max-height: 85vw;
-    margin-left: -40px;
+    margin-left: -20px;
   }
   .site-content {
-    justify-items: center;
     text-align: center;
     margin: 0;
   }
@@ -237,6 +253,29 @@ nav p {
   }
   nav h1 {
     font-size: 24px;
+  }
+  .nav-footer {
+    margin-top: 20px;
+    color: #2c3e50;
+    font-size: 12px;
+  }
+  .image-area-container {
+    text-align: center;
+  }
+  .share-area {
+    position: relative;
+    text-align: center;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 360px) {
+  #quote-text {
+    font-size: 20px;
+  }
+  #quote-source {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
